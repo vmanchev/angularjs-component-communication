@@ -1,0 +1,21 @@
+{
+  "name": "angularjs-conditional-templates",
+  "description": "Example of how one AngularJS component can use different HTML templates",
+  "main": "gulpfile.js",
+  "authors": [
+    "Venelin Manchev <venelinphp@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.7.0",
+    "angular-animate": "^1.7.0",
+    "angular-ui-router": "^1.0.15"
+  }
+}
