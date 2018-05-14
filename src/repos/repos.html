@@ -1,3 +1,5 @@
 <div ng-repeat="repo in $ctrl.user.repos track by $index">
     <input type="text" ng-model="$ctrl.user.repos[$index].name" ng-value="repo.name" size="100" />
+    <button type="button" ng-click="$ctrl.deleteRepo(repo)">X</button>
 </div>
+<button type="button" ng-click="$ctrl.addRepo();">add new repo</button>
