@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('angularjs-seed', ['ui.router', 'ngAnimate'])
+angular.module('angularjs-component-communication', ['ui.router', 'ngAnimate'])
+    .constant('_', window._)
     .config([
         '$urlMatcherFactoryProvider',
         '$urlRouterProvider',

@@ -1,5 +1,5 @@
 angular
-    .module('angularjs-seed')
+    .module('angularjs-component-communication')
     .component('homeComponent', {
         templateUrl: 'home/home.html',
         controller: function ($scope) {

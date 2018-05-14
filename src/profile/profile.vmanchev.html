@@ -1,1 +1,38 @@
-this is <strong>vmanchev</strong> profile
+this is
+<strong>vmanchev</strong> profile
+
+
+<fieldset>
+    <legend>User profile</legend>
+
+    <form ng-submit="$ctrl.saveUserProfile();">
+        <div>
+            <label>First name:</label>
+            <input type="text" ng-model="$ctrl.user.firstName" />
+        </div>
+        <div>
+            <label>Last name:</label>
+            <input type="text" ng-model="$ctrl.user.lastName" />
+        </div>
+
+        <fieldset>
+            <legend>Addresses</legend>
+            <address-component ng-repeat="address in $ctrl.user.addresses track by $index" address="address"></address-component>
+    
+            <div>
+                <button type="button" ng-click="$ctrl.addAddress()">add new address</button>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Repos</legend>
+            <repos-component user="$ctrl.user"></repos-component>
+        </fieldset>
+
+        <div>
+            <button type="submit">save</button>
+        </div>
+
+    </form>
+
+</fieldset>

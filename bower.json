@@ -16,6 +16,7 @@
   "dependencies": {
     "angular": "^1.7.0",
     "angular-animate": "^1.7.0",
-    "angular-ui-router": "^1.0.15"
+    "angular-ui-router": "^1.0.15",
+    "lodash": "^4.17.10"
   }
 }

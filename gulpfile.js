@@ -21,9 +21,9 @@ gulp.task('server', function (done) {
 gulp.task('minify:js', function () {
     return gulp.src('src/**/*.js')
         .pipe(angularFilesort())
-        .pipe(uglify({
-            mangle: false
-        }))
+        // .pipe(uglify({
+        //     mangle: false
+        // }))
         .pipe(concat('app.min.js'))
         .pipe(gulp.dest('public/js'));
 });
@@ -36,7 +36,7 @@ gulp.task('minify:vendor', function () {
     return target
         .pipe(inject(
             js.pipe(concat('vendors.min.js'))
-                .pipe(uglify())
+                //.pipe(uglify())
                 .pipe(gulp.dest('./public/js')), { relative: true, name: 'bower' })
         )
         .pipe(gulp.dest('./public'));
@@ -55,7 +55,7 @@ gulp.task('templates', function () {
     ])
         .pipe(minifyHtml())
         .pipe(angularTemplatecache({
-            module: 'angularjs-seed'
+            module: 'angularjs-component-communication'
         }))
         .pipe(gulp.dest('public/js'));
 });
